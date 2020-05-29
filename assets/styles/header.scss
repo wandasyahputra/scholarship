@@ -1,0 +1,31 @@
+.header {
+  position: fixed;
+  display: inline-flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: $primaryColor;
+  padding: 15px 0;
+  flex-wrap: wrap;
+  align-items: center;
+  z-index: 1;
+  .main-logo {
+    height: 50px;
+    margin-left: 120px;
+  }
+  .nav-content {
+    display: flex;
+    margin-right: 120px;
+    .nav-item {
+      padding: 0 10px;
+      border-left: 1px solid #000;
+      font-size: 20px;
+      font-weight: 700;
+      text-decoration: none;
+      color: $primaryTextColor;
+      &:first-of-type {
+        border-left: 1px solid $primaryColor;
+      }
+    }
+  }
+}
