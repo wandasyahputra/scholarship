@@ -3,6 +3,8 @@ import mainLogo from '../assets/images/Sea-Undergraduate-Logo.png'
 import backgroundHead from '../assets/images/BG-Head.jpg'
 import homeImage from '../assets/images/icon-graduate.png'
 
+import freshmen from '../assets/images/icon-freshmen.png'
+
 export default function Home() {
   return (
     <div className="d-flex flex-column">
@@ -15,7 +17,7 @@ export default function Home() {
           <a href="#faq" className="nav-item">FAQ</a>
         </nav>
       </div>
-      <div className="home">
+      <section className="home">
         <img src={backgroundHead} className="w-100" />
         <div className="caption-container">
           <div className="w-50">
@@ -28,7 +30,25 @@ export default function Home() {
             <img src={homeImage} />
           </div>
         </div>
-      </div>
+      </section>
+      <section className="program">
+        <div className="container">
+
+          <h4 className="title">
+            Undergraduate Scholarship Program
+          </h4>
+          <p>We are excited to announce that Sea Indonesia is now partnering with five universities in Indonesia and offering a merit-based scholarship to bright Indonesian students. This scholarship is our commitment to give back to the community by empowering youth through education. Through this scholarship, we hope to provide talented students with the opportunity to pursue a bachelor’s degree and solve the talent-gap issue in the technology industry in Indonesia.</p>
+          <div className="card-container">
+            <div className="card">
+              <img src={freshmen} className="icon"/>
+              <p><strong>Requirements:</strong></p><ul><li>Indonesian citizen</li><li>A first-year student majoring in an eligible major in Sea's partner university</li><li>Not having any other scholarships or work commitments with other organizations</li><li>Maintain a minimum of 3.5/4.0 cumulative GPA throughout the study</li></ul><p><strong>Benefits:</strong></p><ul><li>Full tuition fee and monthly stipend all the way to the completion of the 4th year of study</li><li>Laptop</li><li>Internship opportunity in Sea Businesses (Garena, Shopee, Airpay)</li><li>Development program</li></ul>
+            </div>
+            <div className="card second">
+            lalalala
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }

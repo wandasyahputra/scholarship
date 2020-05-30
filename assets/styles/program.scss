@@ -1,0 +1,56 @@
+.program {
+  background-color: $secondaryBackground;
+  padding: 60px 120px;
+  .title {
+    color: $thirdTextColor;
+    font-family: 'AvenirBlack', 'sans-serif';
+    font-size: 29px;
+    text-align: center;
+    padding: 29px 0;
+    margin: 0px;
+  }
+  p {
+    font-size: 14px;
+    color: $fourthTextColor;
+    text-align: justify;
+    line-height: 26px;
+  }
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    .card {
+      width: 50%;
+      box-sizing: border-box;
+      margin: 1% 1% 1% 0;
+      padding: 15px 40px;
+      background-color: #fff;
+      box-shadow: 0 0 16px rgba(0,0,0,.3);
+      &.second {
+        margin: 1% 0 1% 1%
+      }
+      .icon {
+        height: 120px;
+        margin: 0 auto;
+        display: block;
+      }
+      ul {
+        list-style-type: none;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 0;
+        li {
+          margin: .65rem;
+          text-indent: -1.85rem;
+          line-height: 1.5rem;
+        }
+      }
+      ul li:before {
+        content: "-";
+        margin-left: 1rem;
+        margin-right: .45rem;
+      }
+    }
+  }
+}
